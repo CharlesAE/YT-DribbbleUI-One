@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     //Create the views
+    
     // UIImageView was assigned an image file named "charles"
     //from the assets folder, and given a corner radius of 16
     let profileImage: UIImageView = {

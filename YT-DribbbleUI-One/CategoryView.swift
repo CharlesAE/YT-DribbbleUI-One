@@ -19,7 +19,7 @@ class CategoryView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
 //This view contains a UILabel,
 // which will be used to set the text for the 'pills'
     var categoryLbl: UILabel = {
