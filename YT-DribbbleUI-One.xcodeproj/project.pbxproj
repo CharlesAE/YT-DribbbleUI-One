@@ -15,6 +15,7 @@
 		21DCFC1E2AC3189800C79DF0 /* YT_DribbbleUI_OneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DCFC1D2AC3189800C79DF0 /* YT_DribbbleUI_OneTests.swift */; };
 		21DCFC282AC3189800C79DF0 /* YT_DribbbleUI_OneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DCFC272AC3189800C79DF0 /* YT_DribbbleUI_OneUITests.swift */; };
 		21DCFC2A2AC3189800C79DF0 /* YT_DribbbleUI_OneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DCFC292AC3189800C79DF0 /* YT_DribbbleUI_OneUITestsLaunchTests.swift */; };
+		21DCFC372AC32BC900C79DF0 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DCFC362AC32BC900C79DF0 /* CategoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		21DCFC232AC3189800C79DF0 /* YT-DribbbleUI-OneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "YT-DribbbleUI-OneUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21DCFC272AC3189800C79DF0 /* YT_DribbbleUI_OneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YT_DribbbleUI_OneUITests.swift; sourceTree = "<group>"; };
 		21DCFC292AC3189800C79DF0 /* YT_DribbbleUI_OneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YT_DribbbleUI_OneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		21DCFC362AC32BC900C79DF0 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				21DCFC112AC3189700C79DF0 /* LaunchScreen.storyboard */,
 				21DCFC142AC3189700C79DF0 /* Info.plist */,
 				21DCFC0C2AC3189500C79DF0 /* YT_DribbbleUI_One.xcdatamodeld */,
+				21DCFC362AC32BC900C79DF0 /* CategoryView.swift */,
 			);
 			path = "YT-DribbbleUI-One";
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			files = (
 				21DCFC082AC3189500C79DF0 /* ViewController.swift in Sources */,
 				21DCFC042AC3189500C79DF0 /* AppDelegate.swift in Sources */,
+				21DCFC372AC32BC900C79DF0 /* CategoryView.swift in Sources */,
 				21DCFC0E2AC3189500C79DF0 /* YT_DribbbleUI_One.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
