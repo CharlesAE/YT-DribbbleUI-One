@@ -33,7 +33,6 @@ class ViewController: UIViewController {
     let greetingLabel: UILabel = {
         let label = UILabel()
         label.textColor = .black
-        label.text = "Hello Charles!"
         label.font = .preferredFont(forTextStyle: .callout)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -171,6 +170,9 @@ class ViewController: UIViewController {
         categoryStackView.addArrangedSubview(newCategory)
         categoryStackView.addArrangedSubview(featuredCategory)
         categoryStackView.addArrangedSubview(trendyCategory)
+        
+        
+        greetingLabel.attributedText = configAttributedTitle("Hi, Charles", "!")
     }
 
     func configConstraints() {
@@ -223,9 +225,9 @@ class ViewController: UIViewController {
         // is set to 24 (3 * 8) pts from the notification button's right side
         
         
-        //the large title is anchored 32 pts below the first set of items,
-        //24 pts from the left of the parent view,
-        //32 pts from the right of the parentview
+        // The large title is anchored 32 pts below the first set of items,
+        // 24 pts from the left of the parent view,
+        // 32 pts from the right of the parentview
         titleLabel.topAnchor.constraint(
         equalToSystemSpacingBelow: greetingLabel.bottomAnchor, multiplier: 4),
         titleLabel.leadingAnchor.constraint(
@@ -233,7 +235,7 @@ class ViewController: UIViewController {
         view.trailingAnchor.constraint(
         equalToSystemSpacingAfter: titleLabel.trailingAnchor, multiplier: 4),
 
-        //SearchView is set to 24 pts below the large title
+        // SearchView is set to 24 pts below the large title
         // and 32 pts from the left of the parent view
         searchView.topAnchor.constraint(
         equalToSystemSpacingBelow: titleLabel.bottomAnchor, multiplier: 3),
@@ -278,5 +280,16 @@ class ViewController: UIViewController {
         trendyCategory.heightAnchor.constraint(equalToConstant: 32),
         ])
     }
+    
+    
+    // This function requires two strings
+    // the first being the greeting
+    // the second being the exclamation mark
+    // it will then set the color of the exclamation mark to orange
+    func configAttributedTitle(_ greeting: String,_ coloredGreeting: String) -> NSAttributedString {
+            let attributedText = NSMutableAttributedString(attributedString: NSAttributedString(string: greeting, attributes: [.font: UIFont.preferredFont(forTextStyle: .callout),.foregroundColor: UIColor.label]))
+        attributedText.append(NSAttributedString(string: coloredGreeting, attributes: [.font:UIFont.preferredFont(forTextStyle: .callout), .foregroundColor: UIColor(named: "orangeColor")!]))
+            return attributedText
+        }
 
 }
