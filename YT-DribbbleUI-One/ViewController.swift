@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     //Create the views
-
+    
     // UIImageView was assigned an image file named "charles"
     //from the assets folder, and given a corner radius of 16
     let profileImage: UIImageView = {
@@ -105,6 +105,53 @@ class ViewController: UIViewController {
         return textField
       }()
     
+    
+    //The first instance of the CategoryView,
+    //The text value of the UILabel within it is set to "New",
+    //While the text color of the UILabel is set to "black"
+    //And fnally the view's background color is set to "white"
+    var newCategory: CategoryView = {
+        let category = CategoryView()
+        category.categoryLbl.text = "New"
+        category.categoryLbl.textColor = .black
+        category.backgroundColor = .white
+        category.translatesAutoresizingMaskIntoConstraints = false
+        return category
+    }()
+
+    //This CategoryView is set to "Featured"
+    //And is basically a reverse of the previous
+    var featuredCategory: CategoryView = {
+        let category = CategoryView()
+        category.categoryLbl.text = "Featured"
+        category.categoryLbl.textColor = .white
+        category.backgroundColor = .black
+        category.translatesAutoresizingMaskIntoConstraints = false
+        return category
+    }()
+
+    //The final Category view is essentially a copy of the first
+    //Scroll up and take another look at the 'pills' image for a quick refresher
+    var trendyCategory: CategoryView = {
+        let category = CategoryView()
+        category.categoryLbl.text = "Trendy"
+        category.categoryLbl.textColor = .black
+        category.backgroundColor = .white
+        category.translatesAutoresizingMaskIntoConstraints = false
+        return category
+    }()
+
+    //The stackview has it's spacing and distribution properties set
+    let categoryStackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.spacing = 8
+        stackView.axis = .horizontal
+        stackView.alignment = .center
+        stackView.distribution = .equalSpacing
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        return stackView
+    }()
+    
     func configViews(){
         view.addSubview(profileImage)
         view.addSubview(greetingLabel)
@@ -117,6 +164,13 @@ class ViewController: UIViewController {
         // the previously empty UIView
         searchView.addSubview(searchIcon)
         searchView.addSubview(searchTextField)
+        
+        
+        //First, the stackview is added
+        view.addSubview(categoryStackView)
+        categoryStackView.addArrangedSubview(newCategory)
+        categoryStackView.addArrangedSubview(featuredCategory)
+        categoryStackView.addArrangedSubview(trendyCategory)
     }
 
     func configConstraints() {
@@ -169,8 +223,6 @@ class ViewController: UIViewController {
         // is set to 24 (3 * 8) pts from the notification button's right side
         
         
-        
-        
         //the large title is anchored 32 pts below the first set of items,
         //24 pts from the left of the parent view,
         //32 pts from the right of the parentview
@@ -211,9 +263,20 @@ class ViewController: UIViewController {
         //Again, the textfield is WITHIN the searchview
         //so it's Y anchor is set to the searchviews, centering it horizontally
         searchTextField.centerYAnchor.constraint(equalTo: searchView.centerYAnchor),
-        searchTextField.leadingAnchor.constraint(equalToSystemSpacingAfter: searchView.leadingAnchor, multiplier: 3)
+        searchTextField.leadingAnchor.constraint(equalToSystemSpacingAfter: searchView.leadingAnchor, multiplier: 3),
+        
+        categoryStackView.topAnchor.constraint(equalToSystemSpacingBelow: searchView.bottomAnchor, multiplier: 3),
+        categoryStackView.leadingAnchor.constraint(equalToSystemSpacingAfter: view.leadingAnchor, multiplier: 4),
+        categoryStackView.heightAnchor.constraint(equalToConstant: 32),
+        view.trailingAnchor.constraint(equalToSystemSpacingAfter: categoryStackView.trailingAnchor, multiplier: 4),
+                    
+        //the CategoryViews are given a height of 32,
+        //in order for those rounded corners which were set to 16
+        //to have that circular shape
+        newCategory.heightAnchor.constraint(equalToConstant: 32),
+        featuredCategory.heightAnchor.constraint(equalToConstant: 32),
+        trendyCategory.heightAnchor.constraint(equalToConstant: 32),
         ])
     }
 
 }
-
