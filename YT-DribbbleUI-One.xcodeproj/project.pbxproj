@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21062B3A2ACD92C500DE4836 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21062B392ACD92C500DE4836 /* HeaderCell.swift */; };
+		21062B3E2ACDB1D900DE4836 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21062B3D2ACDB1D900DE4836 /* Product.swift */; };
+		21062B402ACDB33C00DE4836 /* BodyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21062B3F2ACDB33C00DE4836 /* BodyCell.swift */; };
+		21062B422ACDB37800DE4836 /* PriceTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21062B412ACDB37800DE4836 /* PriceTag.swift */; };
+		21C707592ACDC17F003EA67F /* Layouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C707582ACDC17F003EA67F /* Layouts.swift */; };
 		21DCFC042AC3189500C79DF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DCFC032AC3189500C79DF0 /* AppDelegate.swift */; };
-		21DCFC082AC3189500C79DF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DCFC072AC3189500C79DF0 /* ViewController.swift */; };
+		21DCFC082AC3189500C79DF0 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DCFC072AC3189500C79DF0 /* HomeController.swift */; };
 		21DCFC0E2AC3189500C79DF0 /* YT_DribbbleUI_One.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 21DCFC0C2AC3189500C79DF0 /* YT_DribbbleUI_One.xcdatamodeld */; };
 		21DCFC102AC3189700C79DF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21DCFC0F2AC3189700C79DF0 /* Assets.xcassets */; };
 		21DCFC132AC3189700C79DF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21DCFC112AC3189700C79DF0 /* LaunchScreen.storyboard */; };
@@ -36,9 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21062B392ACD92C500DE4836 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		21062B3D2ACDB1D900DE4836 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		21062B3F2ACDB33C00DE4836 /* BodyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyCell.swift; sourceTree = "<group>"; };
+		21062B412ACDB37800DE4836 /* PriceTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTag.swift; sourceTree = "<group>"; };
+		21C707582ACDC17F003EA67F /* Layouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layouts.swift; sourceTree = "<group>"; };
 		21DCFC002AC3189500C79DF0 /* YT-DribbbleUI-One.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YT-DribbbleUI-One.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21DCFC032AC3189500C79DF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		21DCFC072AC3189500C79DF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		21DCFC072AC3189500C79DF0 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		21DCFC0D2AC3189500C79DF0 /* YT_DribbbleUI_One.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YT_DribbbleUI_One.xcdatamodel; sourceTree = "<group>"; };
 		21DCFC0F2AC3189700C79DF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21DCFC122AC3189700C79DF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -100,12 +110,17 @@
 			isa = PBXGroup;
 			children = (
 				21DCFC032AC3189500C79DF0 /* AppDelegate.swift */,
-				21DCFC072AC3189500C79DF0 /* ViewController.swift */,
+				21DCFC072AC3189500C79DF0 /* HomeController.swift */,
 				21DCFC0F2AC3189700C79DF0 /* Assets.xcassets */,
 				21DCFC112AC3189700C79DF0 /* LaunchScreen.storyboard */,
 				21DCFC142AC3189700C79DF0 /* Info.plist */,
 				21DCFC0C2AC3189500C79DF0 /* YT_DribbbleUI_One.xcdatamodeld */,
 				21DCFC382AC3341000C79DF0 /* CategoryView.swift */,
+				21062B3F2ACDB33C00DE4836 /* BodyCell.swift */,
+				21062B392ACD92C500DE4836 /* HeaderCell.swift */,
+				21062B3D2ACDB1D900DE4836 /* Product.swift */,
+				21062B412ACDB37800DE4836 /* PriceTag.swift */,
+				21C707582ACDC17F003EA67F /* Layouts.swift */,
 			);
 			path = "YT-DribbbleUI-One";
 			sourceTree = "<group>";
@@ -257,10 +272,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21DCFC082AC3189500C79DF0 /* ViewController.swift in Sources */,
+				21C707592ACDC17F003EA67F /* Layouts.swift in Sources */,
+				21062B422ACDB37800DE4836 /* PriceTag.swift in Sources */,
+				21DCFC082AC3189500C79DF0 /* HomeController.swift in Sources */,
+				21062B3A2ACD92C500DE4836 /* HeaderCell.swift in Sources */,
 				21DCFC042AC3189500C79DF0 /* AppDelegate.swift in Sources */,
 				21DCFC392AC3341000C79DF0 /* CategoryView.swift in Sources */,
 				21DCFC0E2AC3189500C79DF0 /* YT_DribbbleUI_One.xcdatamodeld in Sources */,
+				21062B3E2ACDB1D900DE4836 /* Product.swift in Sources */,
+				21062B402ACDB33C00DE4836 /* BodyCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

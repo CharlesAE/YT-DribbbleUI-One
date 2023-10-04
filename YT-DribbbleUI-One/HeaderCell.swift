@@ -1,21 +1,26 @@
 //
-//  ViewController.swift
+//  HeaderCell.swift
 //  YT-DribbbleUI-One
 //
-//  Created by Charles Edwards on 9/26/23.
+//  Created by Charles Edwards on 10/4/23.
 //
 
+import Foundation
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = UIColor(named: "bgGray")
+class HeaderCell: UICollectionViewCell {
+    
+    override init(frame: CGRect) {
+            super.init(frame: frame)
+        backgroundColor = UIColor(named: "bgGray")
         configViews()
         configConstraints()
-        // Do any additional setup after loading the view.
+        }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
+    
     //Create the views
     
     // UIImageView was assigned an image file named "charles"
@@ -152,12 +157,12 @@ class ViewController: UIViewController {
     }()
     
     func configViews(){
-        view.addSubview(profileImage)
-        view.addSubview(greetingLabel)
-        view.addSubview(notificationButton)
+        addSubview(profileImage)
+        addSubview(greetingLabel)
+        addSubview(notificationButton)
         // Add the title label and search view to parent view
-        view.addSubview(titleLabel)
-        view.addSubview(searchView)
+        addSubview(titleLabel)
+        addSubview(searchView)
 
         // the icon and textfield are ADDED TO the searchview
         // the previously empty UIView
@@ -166,7 +171,7 @@ class ViewController: UIViewController {
         
         
         //First, the stackview is added
-        view.addSubview(categoryStackView)
+        addSubview(categoryStackView)
         categoryStackView.addArrangedSubview(newCategory)
         categoryStackView.addArrangedSubview(featuredCategory)
         categoryStackView.addArrangedSubview(trendyCategory)
@@ -178,7 +183,7 @@ class ViewController: UIViewController {
     func configConstraints() {
         NSLayoutConstraint.activate([
         profileImage.topAnchor.constraint(
-            equalToSystemSpacingBelow: view.safeAreaLayoutGuide.topAnchor, multiplier: 1),
+            equalToSystemSpacingBelow: safeAreaLayoutGuide.topAnchor, multiplier: 1),
         // the following line
 
         // constraintconstraint(
@@ -191,7 +196,7 @@ class ViewController: UIViewController {
         // by a multiplier of 1, (which is equivalent to 8 pts)
 
         profileImage.leadingAnchor.constraint(
-            equalToSystemSpacingAfter: view.leadingAnchor, multiplier: 3),
+            equalToSystemSpacingAfter: leadingAnchor, multiplier: 3),
          
         // leadingAnchor.constraint(
         // equalToSystemSpacingAfter: leadingAnchor, multiplier: 3)
@@ -218,7 +223,7 @@ class ViewController: UIViewController {
         notificationButton.heightAnchor.constraint(equalToConstant: 32),
         notificationButton.widthAnchor.constraint(equalToConstant: 32),
         notificationButton.centerYAnchor.constraint(equalTo: greetingLabel.centerYAnchor),
-        view.trailingAnchor.constraint(
+        trailingAnchor.constraint(
         equalToSystemSpacingAfter: notificationButton.trailingAnchor, multiplier: 3),
 
         // this essentially means that the right side of the parent view
@@ -231,8 +236,8 @@ class ViewController: UIViewController {
         titleLabel.topAnchor.constraint(
         equalToSystemSpacingBelow: greetingLabel.bottomAnchor, multiplier: 4),
         titleLabel.leadingAnchor.constraint(
-            equalToSystemSpacingAfter: view.leadingAnchor, multiplier: 3),
-        view.trailingAnchor.constraint(
+            equalToSystemSpacingAfter: leadingAnchor, multiplier: 3),
+        trailingAnchor.constraint(
         equalToSystemSpacingAfter: titleLabel.trailingAnchor, multiplier: 4),
 
         // SearchView is set to 24 pts below the large title
@@ -240,13 +245,13 @@ class ViewController: UIViewController {
         searchView.topAnchor.constraint(
         equalToSystemSpacingBelow: titleLabel.bottomAnchor, multiplier: 3),
         searchView.leadingAnchor.constraint(
-            equalToSystemSpacingAfter: view.leadingAnchor, multiplier: 4),
+            equalToSystemSpacingAfter: leadingAnchor, multiplier: 4),
 
         //Height anchor set to 50
         //Remember the corner radius was set to 25?
         //this will give it the circular look
         searchView.heightAnchor.constraint(equalToConstant: 50),
-        view.trailingAnchor.constraint(
+        trailingAnchor.constraint(
         equalToSystemSpacingAfter: searchView.trailingAnchor, multiplier: 4),
 
         //Remember the search icon is placed WITHIN the searchview
@@ -268,9 +273,9 @@ class ViewController: UIViewController {
         searchTextField.leadingAnchor.constraint(equalToSystemSpacingAfter: searchView.leadingAnchor, multiplier: 3),
         
         categoryStackView.topAnchor.constraint(equalToSystemSpacingBelow: searchView.bottomAnchor, multiplier: 3),
-        categoryStackView.leadingAnchor.constraint(equalToSystemSpacingAfter: view.leadingAnchor, multiplier: 4),
+        categoryStackView.leadingAnchor.constraint(equalToSystemSpacingAfter: leadingAnchor, multiplier: 4),
         categoryStackView.heightAnchor.constraint(equalToConstant: 32),
-        view.trailingAnchor.constraint(equalToSystemSpacingAfter: categoryStackView.trailingAnchor, multiplier: 4),
+        trailingAnchor.constraint(equalToSystemSpacingAfter: categoryStackView.trailingAnchor, multiplier: 4),
                     
         //the CategoryViews are given a height of 32,
         //in order for those rounded corners which were set to 16
