@@ -1,0 +1,29 @@
+# YT-DribbbleUI-One
+
+### Recreating [This Design](https://dribbble.com/shots/15131702-Digital-Product-Store-App) I saw on Dribbble using UIKit
+
+
+## Turn this into a community challenge? #LongLiveUIKit
+- Feel free to participate.
+
+
+## Credits
+- [Mahmudur Rahman for Orizon: UI/UX Design Agency](https://dribbble.com/Orizon)
+
+- [Playstation 5 Controller Image](https://www.vecteezy.com/free-png/ps5)
+- [Nintendo Switch Controller Image](https://www.vecteezy.com/free-vector/nintendo)
+
+
+### Screenshot
+
+![Product app page](https://raw.githubusercontent.com/CharlesAE/YT-DribbbleUI-One/part_two/screenshots/part_two.png)|  
+
+
+### Libraries/Frameworks Used
+* [UIKit](https://developer.apple.com/documentation/uikit)
+* [UICollectionViewCompositionalLayout](https://developer.apple.com/documentation/uikit/uicollectionviewcompositionallayout)
+
+### Project Requirements
+* iOS 13.0+
+* Xcode 14+
+* Swift 5.0+
