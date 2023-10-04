@@ -21,6 +21,7 @@
 		21DCFC282AC3189800C79DF0 /* YT_DribbbleUI_OneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DCFC272AC3189800C79DF0 /* YT_DribbbleUI_OneUITests.swift */; };
 		21DCFC2A2AC3189800C79DF0 /* YT_DribbbleUI_OneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DCFC292AC3189800C79DF0 /* YT_DribbbleUI_OneUITestsLaunchTests.swift */; };
 		21DCFC392AC3341000C79DF0 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DCFC382AC3341000C79DF0 /* CategoryView.swift */; };
+		21E464862AD5CF4D009A2312 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E464852AD5CF4D009A2312 /* MainTabController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		21DCFC272AC3189800C79DF0 /* YT_DribbbleUI_OneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YT_DribbbleUI_OneUITests.swift; sourceTree = "<group>"; };
 		21DCFC292AC3189800C79DF0 /* YT_DribbbleUI_OneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YT_DribbbleUI_OneUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		21DCFC382AC3341000C79DF0 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		21E464852AD5CF4D009A2312 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				21062B3D2ACDB1D900DE4836 /* Product.swift */,
 				21062B412ACDB37800DE4836 /* PriceTag.swift */,
 				21C707582ACDC17F003EA67F /* Layouts.swift */,
+				21E464852AD5CF4D009A2312 /* MainTabController.swift */,
 			);
 			path = "YT-DribbbleUI-One";
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			files = (
 				21C707592ACDC17F003EA67F /* Layouts.swift in Sources */,
 				21062B422ACDB37800DE4836 /* PriceTag.swift in Sources */,
+				21E464862AD5CF4D009A2312 /* MainTabController.swift in Sources */,
 				21DCFC082AC3189500C79DF0 /* HomeController.swift in Sources */,
 				21062B3A2ACD92C500DE4836 /* HeaderCell.swift in Sources */,
 				21DCFC042AC3189500C79DF0 /* AppDelegate.swift in Sources */,

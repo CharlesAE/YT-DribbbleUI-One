@@ -292,7 +292,7 @@ class HeaderCell: UICollectionViewCell {
     // the second being the exclamation mark
     // it will then set the color of the exclamation mark to orange
     func configAttributedTitle(_ greeting: String,_ coloredGreeting: String) -> NSAttributedString {
-            let attributedText = NSMutableAttributedString(attributedString: NSAttributedString(string: greeting, attributes: [.font: UIFont.preferredFont(forTextStyle: .callout),.foregroundColor: UIColor.label]))
+            let attributedText = NSMutableAttributedString(attributedString: NSAttributedString(string: greeting, attributes: [.font: UIFont.preferredFont(forTextStyle: .callout),.foregroundColor: UIColor.black]))
         attributedText.append(NSAttributedString(string: coloredGreeting, attributes: [.font:UIFont.preferredFont(forTextStyle: .callout), .foregroundColor: UIColor(named: "orangeColor")!]))
             return attributedText
         }
