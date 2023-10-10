@@ -14,7 +14,7 @@ class MainTabController: UITabBarController{
     override func viewDidLoad() {
         super.viewDidLoad()
         configTabBar()
-        configContraints()
+        configConstraints()
         
     }
     
@@ -62,18 +62,28 @@ class MainTabController: UITabBarController{
         btn.translatesAutoresizingMaskIntoConstraints = false
         return btn
         }()
+    
+    let buttonStackView : UIStackView = {
+        let stackView = UIStackView()
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.distribution = .equalSpacing
+        stackView.axis = .horizontal
+        return stackView
+    }()
 
     
     func configTabBar(){
         //Set the HomeController we created in the previous articles
         // as the main ViewController for the tabbar
+        
         viewControllers = [HomeController()]
         
         //Add each of the buttons to the tab bar
-        tabBar.addSubview(homeBtn)
-        tabBar.addSubview(bagBtn)
-        tabBar.addSubview(heartBtn)
-        tabBar.addSubview(userBtn)
+        
+        tabBar.addSubview(buttonStackView)
+        [homeBtn, bagBtn,heartBtn,userBtn].forEach {
+            buttonStackView.addArrangedSubview($0)
+        }
 
         // creates a black horizontal rectangle with rounded corners
         let layer = CAShapeLayer()
@@ -88,26 +98,58 @@ class MainTabController: UITabBarController{
         layer.fillColor = UIColor.black.cgColor
         // assign the shape to the tabbar
         tabBar.layer.insertSublayer(layer, at: 0)
-
+        
         // this sets the portions of the tab bar,
         // not governed by the horizontal rectangle
         // to be transparent
         tabBar.backgroundImage = UIImage()
         
     }
-    func configContraints(){
-        // the x value for each button is unique
-        // to place each button at a differnet location
-        // along the tab bar's X (horizontal) axis.
-        // You can play with these values as you like
-        homeBtn.frame = CGRect(x: self.tabBar.bounds.width / 8, y: 0 , width: 40, height: 40)
-        bagBtn.frame = CGRect(x: self.tabBar.bounds.width / 3, y: 0 , width: 40, height: 40)
-        heartBtn.frame = CGRect(x: self.tabBar.bounds.width / 1.75 , y: 0 , width: 40, height: 40)
-        userBtn.frame = CGRect(x: self.tabBar.bounds.width / 1.25, y: 0 , width: 40, height: 40)
+    func configConstraints(){
         
-        
+        NSLayoutConstraint.activate([
+            buttonStackView.leadingAnchor.constraint(equalToSystemSpacingAfter: view.leadingAnchor, multiplier: 6),
+            
+            
+            homeBtn.widthAnchor.constraint(equalToConstant: 40),
+            homeBtn.heightAnchor.constraint(equalToConstant: 40),
+            
+            
+            bagBtn.widthAnchor.constraint(equalToConstant: 40),
+            bagBtn.heightAnchor.constraint(equalToConstant: 40),
+            
+            
+            heartBtn.widthAnchor.constraint(equalToConstant: 40),
+            heartBtn.heightAnchor.constraint(equalToConstant: 40),
+            userBtn.widthAnchor.constraint(equalToConstant: 40),
+            userBtn.heightAnchor.constraint(equalToConstant: 40),
+            
+            
+            view.trailingAnchor.constraint(equalToSystemSpacingAfter: buttonStackView.trailingAnchor, multiplier: 6)
+            
+        ])
        
     }
     
 }
 
+import SwiftUI
+
+struct TabPreview: PreviewProvider {
+    
+    static var previews: some View {
+        ContainerView().edgesIgnoringSafeArea(.all)
+    }
+    
+    struct ContainerView: UIViewControllerRepresentable {
+        
+        func makeUIViewController(context: Context) -> UIViewController{
+            return MainTabController()
+        }
+        
+        func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
+            
+        }
+        
+    }
+}

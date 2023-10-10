@@ -11,6 +11,9 @@
 		21062B3E2ACDB1D900DE4836 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21062B3D2ACDB1D900DE4836 /* Product.swift */; };
 		21062B402ACDB33C00DE4836 /* BodyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21062B3F2ACDB33C00DE4836 /* BodyCell.swift */; };
 		21062B422ACDB37800DE4836 /* PriceTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21062B412ACDB37800DE4836 /* PriceTag.swift */; };
+		218C72592ADA9CC500AD4C22 /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218C72582ADA9CC500AD4C22 /* Details.swift */; };
+		218C725B2ADAA78F00AD4C22 /* PriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218C725A2ADAA78F00AD4C22 /* PriceView.swift */; };
+		218C725D2ADAB86500AD4C22 /* ProductDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218C725C2ADAB86500AD4C22 /* ProductDetails.swift */; };
 		21C707592ACDC17F003EA67F /* Layouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C707582ACDC17F003EA67F /* Layouts.swift */; };
 		21DCFC042AC3189500C79DF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DCFC032AC3189500C79DF0 /* AppDelegate.swift */; };
 		21DCFC082AC3189500C79DF0 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DCFC072AC3189500C79DF0 /* HomeController.swift */; };
@@ -46,6 +49,9 @@
 		21062B3D2ACDB1D900DE4836 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		21062B3F2ACDB33C00DE4836 /* BodyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyCell.swift; sourceTree = "<group>"; };
 		21062B412ACDB37800DE4836 /* PriceTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTag.swift; sourceTree = "<group>"; };
+		218C72582ADA9CC500AD4C22 /* Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
+		218C725A2ADAA78F00AD4C22 /* PriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceView.swift; sourceTree = "<group>"; };
+		218C725C2ADAB86500AD4C22 /* ProductDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetails.swift; sourceTree = "<group>"; };
 		21C707582ACDC17F003EA67F /* Layouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layouts.swift; sourceTree = "<group>"; };
 		21DCFC002AC3189500C79DF0 /* YT-DribbbleUI-One.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YT-DribbbleUI-One.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21DCFC032AC3189500C79DF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +130,9 @@
 				21062B412ACDB37800DE4836 /* PriceTag.swift */,
 				21C707582ACDC17F003EA67F /* Layouts.swift */,
 				21E464852AD5CF4D009A2312 /* MainTabController.swift */,
+				218C72582ADA9CC500AD4C22 /* Details.swift */,
+				218C725A2ADAA78F00AD4C22 /* PriceView.swift */,
+				218C725C2ADAB86500AD4C22 /* ProductDetails.swift */,
 			);
 			path = "YT-DribbbleUI-One";
 			sourceTree = "<group>";
@@ -275,13 +284,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				218C725D2ADAB86500AD4C22 /* ProductDetails.swift in Sources */,
 				21C707592ACDC17F003EA67F /* Layouts.swift in Sources */,
 				21062B422ACDB37800DE4836 /* PriceTag.swift in Sources */,
 				21E464862AD5CF4D009A2312 /* MainTabController.swift in Sources */,
 				21DCFC082AC3189500C79DF0 /* HomeController.swift in Sources */,
 				21062B3A2ACD92C500DE4836 /* HeaderCell.swift in Sources */,
 				21DCFC042AC3189500C79DF0 /* AppDelegate.swift in Sources */,
+				218C72592ADA9CC500AD4C22 /* Details.swift in Sources */,
 				21DCFC392AC3341000C79DF0 /* CategoryView.swift in Sources */,
+				218C725B2ADAA78F00AD4C22 /* PriceView.swift in Sources */,
 				21DCFC0E2AC3189500C79DF0 /* YT_DribbbleUI_One.xcdatamodeld in Sources */,
 				21062B3E2ACDB1D900DE4836 /* Product.swift in Sources */,
 				21062B402ACDB33C00DE4836 /* BodyCell.swift in Sources */,

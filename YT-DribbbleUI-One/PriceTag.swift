@@ -32,7 +32,7 @@ class PriceTag: UIView {
     let priceIcon: UIImageView = {
     var priceIcon = UIImageView()
     priceIcon.image = UIImage(systemName: "dollarsign.circle",withConfiguration: UIImage.SymbolConfiguration(weight: .light))
-    priceIcon.tintColor = .red
+    priceIcon.tintColor = UIColor(named: "orangeColor")
     priceIcon.contentMode = .scaleAspectFit
     priceIcon.translatesAutoresizingMaskIntoConstraints = false
     return priceIcon
