@@ -23,7 +23,7 @@
 
 ### Screenshot
 
-![Product app page](https://raw.githubusercontent.com/CharlesAE/YT-DribbbleUI-One/part_four/screenshots/completed_design.gif)|  
+![Product app page](https://raw.githubusercontent.com/CharlesAE/YT-DribbbleUI-One/final/screenshots/details.gif)|  
 
 
 ### Libraries/Frameworks Used

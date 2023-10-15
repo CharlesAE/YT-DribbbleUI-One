@@ -94,62 +94,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2160206C2ADBD5320044951F /* Model */ = {
+		216020AF2ADBE0600044951F /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				21062B3D2ACDB1D900DE4836 /* Product.swift */,
+				21C707582ACDC17F003EA67F /* Layouts.swift */,
 			);
-			path = Model;
+			path = Util;
 			sourceTree = "<group>";
 		};
-		2160206D2ADBD54C0044951F /* View */ = {
+		216020B02ADBE0770044951F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				21DCFC382AC3341000C79DF0 /* CategoryView.swift */,
-				21062B412ACDB37800DE4836 /* PriceTag.swift */,
-				2160206F2ADBD55E0044951F /* Detail */,
-				2160206E2ADBD5560044951F /* Home */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		2160206E2ADBD5560044951F /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				21062B392ACD92C500DE4836 /* HeaderCell.swift */,
-				21062B3F2ACDB33C00DE4836 /* BodyCell.swift */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		2160206F2ADBD55E0044951F /* Detail */ = {
-			isa = PBXGroup;
-			children = (
-				218C725C2ADAB86500AD4C22 /* ProductDetails.swift */,
-				218C725A2ADAA78F00AD4C22 /* PriceView.swift */,
-			);
-			path = Detail;
-			sourceTree = "<group>";
-		};
-		216020702ADBD58C0044951F /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				216020722ADBD5A20044951F /* Detail */,
-				216020712ADBD5990044951F /* Home */,
 				21E464852AD5CF4D009A2312 /* MainTabController.swift */,
+				216020B22ADBE0860044951F /* Home */,
+				216020B12ADBE07E0044951F /* Detail */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		216020712ADBD5990044951F /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				21DCFC072AC3189500C79DF0 /* HomeController.swift */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		216020722ADBD5A20044951F /* Detail */ = {
+		216020B12ADBE07E0044951F /* Detail */ = {
 			isa = PBXGroup;
 			children = (
 				218C72582ADA9CC500AD4C22 /* Details.swift */,
@@ -157,12 +120,49 @@
 			path = Detail;
 			sourceTree = "<group>";
 		};
-		216020742ADBD5BB0044951F /* Util */ = {
+		216020B22ADBE0860044951F /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				21C707582ACDC17F003EA67F /* Layouts.swift */,
+				21DCFC072AC3189500C79DF0 /* HomeController.swift */,
 			);
-			path = Util;
+			path = Home;
+			sourceTree = "<group>";
+		};
+		216020B42ADBE0A80044951F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				21DCFC382AC3341000C79DF0 /* CategoryView.swift */,
+				21062B412ACDB37800DE4836 /* PriceTag.swift */,
+				216020B62ADBE0BA0044951F /* Home */,
+				216020B52ADBE0AF0044951F /* Detail */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		216020B52ADBE0AF0044951F /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				218C725A2ADAA78F00AD4C22 /* PriceView.swift */,
+				218C725C2ADAB86500AD4C22 /* ProductDetails.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		216020B62ADBE0BA0044951F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				21062B3F2ACDB33C00DE4836 /* BodyCell.swift */,
+				21062B392ACD92C500DE4836 /* HeaderCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		216020B72ADBE0DA0044951F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				21062B3D2ACDB1D900DE4836 /* Product.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		21DCFBF72AC3189500C79DF0 = {
@@ -188,10 +188,10 @@
 		21DCFC022AC3189500C79DF0 /* YT-DribbbleUI-One */ = {
 			isa = PBXGroup;
 			children = (
-				216020742ADBD5BB0044951F /* Util */,
-				216020702ADBD58C0044951F /* Controller */,
-				2160206D2ADBD54C0044951F /* View */,
-				2160206C2ADBD5320044951F /* Model */,
+				216020B72ADBE0DA0044951F /* Model */,
+				216020B42ADBE0A80044951F /* View */,
+				216020B02ADBE0770044951F /* Controller */,
+				216020AF2ADBE0600044951F /* Util */,
 				21DCFC032AC3189500C79DF0 /* AppDelegate.swift */,
 				21DCFC0F2AC3189700C79DF0 /* Assets.xcassets */,
 				21DCFC112AC3189700C79DF0 /* LaunchScreen.storyboard */,
