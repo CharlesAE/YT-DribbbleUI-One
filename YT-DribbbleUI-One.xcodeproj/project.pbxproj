@@ -13,6 +13,8 @@
 		21062B422ACDB37800DE4836 /* PriceTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21062B412ACDB37800DE4836 /* PriceTag.swift */; };
 		216020BD2ADD89C10044951F /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216020BC2ADD89C10044951F /* CategoryView.swift */; };
 		216020BF2ADD89E90044951F /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216020BE2ADD89E90044951F /* MainTabController.swift */; };
+		216020C12ADD8C0E0044951F /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216020C02ADD8C0E0044951F /* Details.swift */; };
+		216020C32ADD8C670044951F /* PriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216020C22ADD8C670044951F /* PriceView.swift */; };
 		218C725D2ADAB86500AD4C22 /* ProductDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218C725C2ADAB86500AD4C22 /* ProductDetails.swift */; };
 		21C707592ACDC17F003EA67F /* Layouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C707582ACDC17F003EA67F /* Layouts.swift */; };
 		21DCFC042AC3189500C79DF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DCFC032AC3189500C79DF0 /* AppDelegate.swift */; };
@@ -49,8 +51,8 @@
 		21062B412ACDB37800DE4836 /* PriceTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTag.swift; sourceTree = "<group>"; };
 		216020BC2ADD89C10044951F /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		216020BE2ADD89E90044951F /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
-		218C72582ADA9CC500AD4C22 /* Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
-		218C725A2ADAA78F00AD4C22 /* PriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceView.swift; sourceTree = "<group>"; };
+		216020C02ADD8C0E0044951F /* Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
+		216020C22ADD8C670044951F /* PriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceView.swift; sourceTree = "<group>"; };
 		218C725C2ADAB86500AD4C22 /* ProductDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetails.swift; sourceTree = "<group>"; };
 		21C707582ACDC17F003EA67F /* Layouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layouts.swift; sourceTree = "<group>"; };
 		21DCFC002AC3189500C79DF0 /* YT-DribbbleUI-One.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YT-DribbbleUI-One.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,7 +115,7 @@
 		216020B12ADBE07E0044951F /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				218C72582ADA9CC500AD4C22 /* Details.swift */,
+				216020C02ADD8C0E0044951F /* Details.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -140,8 +142,8 @@
 		216020B52ADBE0AF0044951F /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				218C725A2ADAA78F00AD4C22 /* PriceView.swift */,
 				218C725C2ADAB86500AD4C22 /* ProductDetails.swift */,
+				216020C22ADD8C670044951F /* PriceView.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -348,10 +350,12 @@
 			files = (
 				218C725D2ADAB86500AD4C22 /* ProductDetails.swift in Sources */,
 				21C707592ACDC17F003EA67F /* Layouts.swift in Sources */,
+				216020C12ADD8C0E0044951F /* Details.swift in Sources */,
 				21062B422ACDB37800DE4836 /* PriceTag.swift in Sources */,
 				21DCFC082AC3189500C79DF0 /* HomeController.swift in Sources */,
 				216020BD2ADD89C10044951F /* CategoryView.swift in Sources */,
 				21062B3A2ACD92C500DE4836 /* HeaderCell.swift in Sources */,
+				216020C32ADD8C670044951F /* PriceView.swift in Sources */,
 				21DCFC042AC3189500C79DF0 /* AppDelegate.swift in Sources */,
 				21DCFC0E2AC3189500C79DF0 /* YT_DribbbleUI_One.xcdatamodeld in Sources */,
 				216020BF2ADD89E90044951F /* MainTabController.swift in Sources */,
