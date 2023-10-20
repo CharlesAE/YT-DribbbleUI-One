@@ -82,4 +82,4 @@ Website: [https://charlesae.dev](https://charlesae.dev)
 [Swift-url]: https://www.swift.org/
 [Xcode]: https://img.shields.io/badge/Xcode-007ACC?style=for-the-badge&logo=Xcode&logoColor=white
 [Xcode-url]: https://developer.apple.com/xcode/
-[product-screenshot]: https://raw.githubusercontent.com/CharlesAE/YT-DribbbleUI-One/main/screenshots/redesign.png
+[product-screenshot]: https://raw.githubusercontent.com/CharlesAE/YT-DribbbleUI-One/main/screenshots/Dribbble_Design_1.png
